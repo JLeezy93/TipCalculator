@@ -20,7 +20,7 @@ namespace TipCalculator
                 Console.WriteLine("What percentage would you like to tip?");
 
                 string tipAmount = Console.ReadLine();
-                decimal tipAmountPercent = Convert.ToDecimal(tipAmount);
+                decimal tipAmountPercent = (Convert.ToDecimal(tipAmount)) / 100;
                 decimal tip = tipAmountPercent * convertSubTotal;
                 decimal grandTotal = convertSubTotal + tip;
 
